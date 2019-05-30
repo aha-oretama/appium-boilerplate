@@ -11,7 +11,7 @@ exports.config = {
         defaultTimeoutInterval: 90000,
     },
     sync: true,
-    logLevel: 'silent',
+    // logLevel: 'silent',
     deprecationWarnings: true,
     bail: 0,
     baseUrl: 'http://the-internet.herokuapp.com',

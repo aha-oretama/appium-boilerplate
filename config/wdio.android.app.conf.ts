@@ -1,9 +1,11 @@
-const { join } = require('path');
-const { config } = require('./wdio.shared.conf');
+import { config as sharedConfig } from './wdio.shared.conf';
+import { join } from 'path';
+import * as WebdriverIO from '@wdio/sync';
 
 // ============
 // Specs
 // ============
+const config: WebdriverIO.Config = { ...sharedConfig };
 config.specs = [
     './tests/specs/**/app*.spec.js',
 ];
@@ -30,4 +32,4 @@ config.capabilities = [
     },
 ];
 
-exports.config = config;
+export { config };
