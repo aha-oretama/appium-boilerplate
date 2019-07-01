@@ -8,6 +8,7 @@ import * as WebdriverIO from '@wdio/sync';
 const config: WebdriverIO.Config = { ...sharedConfig };
 config.specs = [
     './tests/specs/**/app*.spec.js',
+    './tests/specs/**/app*.spec.ts',
 ];
 
 // ============
